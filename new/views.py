@@ -12,7 +12,24 @@ def intro(request):
    return HttpResponse("Hello i am dia")
 
 def index(request):
-   return render(request,'index.html')
+   person=[
+      {'name':'john','age':25},
+      {'name':'mary','age':22},
+      {'name':'jem','age':34},
+      {'name':'ben','age':54},
+      {'name':'alice','age':12}
+   ]
+   context={
+      "name":"Hello Hello",
+      "age":25,
+      'person':person
+      
+   }
+   
+   return render(request,'index.html',context)
+
+def tryy(request):
+   return render(request,'tryy.html')
 
 # contact, about_us .. use httpresponse
 # introduction, ---create a template(intro.html) and show your introduction

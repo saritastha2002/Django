@@ -22,3 +22,38 @@ python manage.py runserver
 
 <!-- create app  -->
 python manage.py startapp app_name
+
+<!-- create migratioin file -->
+python manage.py makemigrations
+
+<!-- changes in database using makemigration file -->
+python manage.py migrate
+
+<!-- open shell -->
+python manage.py shell
+
+<!-- list of objects of class/models -->
+Class_model_name.objects.all()
+
+<!-- create object/data -->
+model_name.objects.create
+(title="dndnn"descriptioin="....",...)
+
+<!--to show values  -->
+Class_model_name.objects.all().values()
+
+<!-- represrnt obj into string -->
+defining function return self.title
+
+<!-- single data fetch -->
+a= model_name.objects.get(id=1..)
+
+<!-- update -->
+a.title = "new data"
+a.save()
+
+<!-- delete -->
+a.delete()
+
+<!-- to filter the objects -->
+class_model_name.objects.filter(field="data",field="data",title="second")
