@@ -28,8 +28,8 @@ def index(request):
    
    return render(request,'index.html',context)
 
-def tryy(request):
-   return render(request,'tryy.html')
+def base(request):
+   return render(request,'base.html')
 
 # contact, about_us .. use httpresponse
 # introduction, ---create a template(intro.html) and show your introduction
