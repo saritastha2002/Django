@@ -10,4 +10,6 @@ class NoteAdmin(admin.ModelAdmin):
     list_editsble = ('title','description')
     list_per_page = 5
     
-admin.site.register(Notes,NoteAdmin)
+admin.site.register(Notes)
+# def __str__(self):
+#     return self.title
